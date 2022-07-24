@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "Overpass", sans-serif;
+}
+:root{
+    
+    --body-color:hsl(216, 12%, 8%);
+    --container-color:hsl(213, 19%, 18%);
+    --grayL:hsl(217, 12%, 63%);
+    --grayM:hsl(216, 12%, 54%);
+    --white1:hsl(0, 0%, 100%);
+    --orange:hsl(25, 97%, 53%);
+}
+
+body{
+    height:100vh;
+    background-color:black;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.rating-container{
+    height: 310px;
+    width:300px; 
+    background:linear-gradient(120deg, var(--container-color), var(--body-color) 99%);
+    border-radius: 20px;
+    padding:20px;
+
+    
+}
+.star-container{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    background-color:var(--container-color);
+    background-image:url(/images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:5px;
+    margin-bottom:25px;
+
+}
+
+
+.rating-container h2{
+    color:var(--white1);
+    text-align:left;
+    margin-bottom:15px;
+}
+
+.rating-container p{
+    color:var(--grayL);
+    font-size: 15px;
+    text-align:left;
+
+}
+
+.score{
+    display:flex;
+    margin-top: 25px;
+    margin-bottom:20px;
+
+}
+
+.score div p{
+    color:var(--grayL);
+    
+}
+
+.divie{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: var(--container-color);
+}
+
+.borange{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: var(--orange);
+
+}
+
+.submit{
+    width:100%;
+    height: 50px;
+    border:none;
+    border-radius:30px;
+    color:var(--white1);
+    background-color:var(--orange);
+    letter-spacing: 3px;
+
+}
+
+.img{
+    background:url(/images/illustration-thank-you.svg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 50%;
+    height:120px;
+    width:100%;
+}
+
+.messageSelct p{
+    text-align: center;
+    color:var(--orange);
+    margin:10px auto;
+    width: 60%;
+    border-radius: 30px;
+    background-color: var(--grayM);
+    line-height:25px ;
+}
+.messageSelct{
+    margin:25px 0;
+}
+
+.finalMessage h2{
+    text-align: center;
+    font-weight: 400;
+    
+}
+.finalMessage p{
+    text-align: center;
+}
+
+.divie:hover{
+    background-color: var(--grayL);
+    
+}
+
+
+.rating-1:active{
+    background-color: var(--orange);
+}
+.rating-2:focus{
+    background-color: var(--orange);
+}
+.rating-3:active{
+    background-color: var(--orange);
+}
+.rating-4:active{
+    background-color: var(--orange);
+}
+.rating-5:active{
+    background-color: var(--orange);
+}
+
